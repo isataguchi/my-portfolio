@@ -1,0 +1,25 @@
+:root body {
+  color: #303841 !important;
+  background: #fffdef !important;
+}
+
+.container-main {
+  padding: 140px 0 140px 0;
+  margin: 0 auto;
+  max-width: 1080px;
+}
+.container-main h1 {
+  font-family: "Merriweather", serif;
+  font-weight: 700;
+  font-size: 84px;
+}
+
+.container-main h2 {
+  font-family: "Sono", sans-serif;
+  font-size: 24px;
+}
+.container-main .cursive {
+  font-family: "Dancing Script", cursive;
+  font-size: 108px;
+  font-weight: 700;
+}
