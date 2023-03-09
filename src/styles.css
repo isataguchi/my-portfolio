@@ -37,25 +37,6 @@ header {
   font-weight: 700;
 }
 
-.contact-link {
-  text-align: center;
-  background: var(--branding-color);
-  color: #f1f1f1;
-  padding: 15px 30px;
-  border-radius: 24px;
-  margin-top: 30px;
-}
-
-.email-link {
-  display: flex;
-  justify-content: center;
-  color: var(--primary-color);
-  font-size: 24px;
-  font-family: var(--default-font-family);
-  font-weight: 500;
-  text-decoration: none;
-}
-
 img {
   padding: 10px 10px 10px 10px;
   background: white;
@@ -73,14 +54,10 @@ img {
 }
 
 .btn-branding a:hover {
-  background: var(--secondary-color);
+  border: var(--secondary-color);
+  background: var(--text-color);
   color: var(--primary-color) !important;
-  padding: 8px 20px;
-  border-radius: 14px;
-  margin: 0 auto;
-  width: 125px;
-  display: flex;
-  text-align: center;
+  text-decoration: none;
 }
 
 .logo {
@@ -91,12 +68,14 @@ img {
 }
 
 nav {
-  padding: 10px 10px;
+  background: rgba(255, 255, 255, 0.89);
+  padding: 5px 0 5px 8px;
+  display: flex;
 }
-
 ul {
   padding: 0;
-  margin: 0;
+  margin-bottom: 0 !important;
+  text-align: left;
 }
 nav li {
   display: inline;
@@ -107,9 +86,6 @@ nav li {
   font-weight: bold;
 }
 
-nav li.active a {
-  color: var(--branding-color);
-}
 nav a {
   text-decoration: none;
   color: var(--primary-color);
@@ -120,19 +96,28 @@ nav a:hover {
   color: var(--text-color);
 }
 
-footer {
-  margin: 60px 0;
-  color: white;
+nav li.active a {
+  color: var(--branding-color);
 }
 
 .highlighted-yellow {
   background: rgba(240, 255, 30, 0.438);
 }
 
+footer {
+  margin: 60px 0;
+  color: var(--primary-color);
+}
+
+footer h3 {
+  font-family: var(--heading-font-family);
+  font-size: 45px;
+  font-weight: 700;
+}
 footer .contact-box {
-  background: var(--primary-color);
-  padding: 30px 120px;
-  border-radius: 8px;
+  background: rgba(129, 129, 129, 0.4);
+  padding: 30px 100px;
+  border-radius: 10px;
 }
 
 footer .social-links a {
@@ -146,13 +131,21 @@ footer .social-links a {
 }
 
 footer .social-links a:hover {
-  color: white;
+  color: var(--secondary-color);
   background: var(--branding-color);
 }
 
 footer p {
-  font-size: 20px;
+  font-size: 24px;
   font-weight: 500;
   margin: 0;
   line-height: 1.5;
+  font-family: var(--heading-font-family);
+}
+
+.email-link {
+  font-size: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  color: #f1f1f1;
 }
